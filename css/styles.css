@@ -21,15 +21,27 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
+
 }
 
 a {
   text-decoration: none;
 }
+h1, h2, h3, p {
+  margin: 0;
+  
+}
+.container {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 132px;
+  padding-right: 68px;
+}
 /* Header */
-header {
-  width: 1440px;
-  height: 729px;
+.header {
   background-color: var(--second-color-background);
   background-image: url(../images/medium-shot-woman-holding-ukranian-flag\ 1.jpg), url(../images/vector.png);
   background-repeat: no-repeat;
@@ -38,10 +50,10 @@ header {
 }
 
 .header-section {
+  padding: 58px 86px 0 108px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 590px;
 }
 
 .header-logo {
@@ -88,37 +100,76 @@ margin: 72px 642px 64px 100px;
 .section-description {
   font-size: 20px;
   line-height: 120%;
-  margin: 0 856px 156px 100px;
+  padding: 0 856px 156px 100px;
 }
 /* MAIN */
+
 .main-section {
   width: 1240px;
-  margin: 144px, 68px, 0px, 132px;
   text-align: center;
 }
+.main-section-list {
+}
+
 .main-section-title {
+  margin-bottom: 10px;
   font-size: 60px;
 line-height: 94.9%;
 letter-spacing: -0.02em;
 text-transform: uppercase;
 }
 .main-section-discription {
+  margin-bottom: 20px;
+
   font-size: 27px;
 }
 .main-section-text {
+  margin-bottom: 62px;
+
   font-size: 20px;
   line-height: 120%;
   color: var(--second-color-font);
 }
 h3 {
+  margin-bottom: 10px;
+
   font-weight: 400;
   font-size: 46px;
 line-height: 94.9%;
 letter-spacing: -0.02em;
 text-transform: uppercase;
 }
+
 .main-section-item {
   display: flex;
-  flex-direction: row;
-  
+  justify-content: space-between;
+align-items: center;
+  margin-bottom: 100px;
+
+  background-color: var(--second-color-background);
+
 }
+.main-section-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.flex-main {
+  padding:20px 0 90px 40px;
+}
+.image {
+  padding:30px 40px 90px 0;
+}
+.flex-main p,
+.main-section-list li
+{
+  margin-bottom: 50px;
+}
+.flex-main {
+  text-align: left;
+}
+time {
+  display: block;
+  margin-top: 10px;
+}
+.main-section-list li 
+
+
